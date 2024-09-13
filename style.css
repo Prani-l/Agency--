@@ -1,0 +1,57 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy";
+  /* background-color: rgba(207, 106, 106, 0.727); */
+}
+@font-face {
+    font-family: "Fira Sans";
+    src: url('./assets/Fonts/silkserif-regularitalic-webfont.woff') format('woff');
+  }
+  
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    color: aliceblue;
+}
+
+#loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    background-color: #0B0b0b;
+    padding: 25vh 20vw;
+}
+.statement{
+    height: fit-content;
+    /* background: #721c1c; */
+    overflow: hidden;
+}
+
+.statement h1 {
+    font-size: 5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+#main{
+    position: relative;
+    padding: 0.001px;
+    background-color: aqua;
+}
+
+.page{
+    height: 100vh;
+    width: 100vw;
+}
+
+#page1{
+    background: #111;
+}
