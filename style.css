@@ -27,16 +27,36 @@ html,body{
     position: fixed;
     z-index: 99;
     background-color: #0B0b0b;
-    padding: 25vh 20vw;
+    padding: 26vh 12vw;
 }
 .statement{
     height: fit-content;
+    /* width: fit-content;/ */
     /* background: #721c1c; */
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2vw;
 }
 
+.statement #counting{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+#counting h4, #counting h5{
+    font-size: 3vw;
+    font-weight: 100;
+}
+#counting h4{
+    /* background: #d14040; */
+    text-align: right;
+    width: 4vw;
+}
 .statement h1 {
-    font-size: 5vw;
+    font-size: 6vw;
     text-transform: uppercase;
     font-weight: 900;
 }
