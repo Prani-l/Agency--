@@ -15,7 +15,7 @@ let TL = gsap.timeline();
 TL.from("#counting" , {
     x: -100,
     stagger: 0.2,
-    duration: 0.1,
+    duration: 0.4,
     ease: "expo.inOut",
     autoAlpha: 0, 
 })
