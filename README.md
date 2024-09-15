@@ -97,6 +97,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Acknowledgements
 
-- **GSAP (GreenSock)** for the powerful animation library.
+- **GSAP (GreenSock)** for the powerful animation library and easy  creation.
 - **Locomotive Scroll** for the smooth scrolling experience.
 - Design inspiration from various top design agencies on multiple competitive and show casing websites.
