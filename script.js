@@ -43,12 +43,30 @@ TL.from('#page1',{
     ease: "expo.inOut",
 })
 TL.to('#loader',{
-    display: none,
+    display: 'none',
 })
 }
 
+function cursorAnimation(){
+
+    document.addEventListener("mousemove", function(dets){
+        console.log(dets.x,dets.y);
+        gsap.to("#crsr",{
+            top: dets.y-10,
+            left: dets.x-15,
+            // // duration: 0.5,
+            // delay: 0.1,
+            // scale: 1,
+            // ease: "power2.in",
+        });
+    });
+    // shery JS here for magnet effect
+    Shery.makeMagnet("#nav-part2 li", {
+        ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+        // duration: 1,
+      });
+    }
+
 loadingPageAnimation();
 
-document.addEventListener("mousemove", function(){
-    console.log("helllo");
-});
+cursorAnimation();
