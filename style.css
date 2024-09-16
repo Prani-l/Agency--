@@ -19,6 +19,15 @@ html,body{
     width: 100%;
     color: aliceblue;
 }
+#cursor{
+    height: 2.25vw;
+    width: 2.25vw;
+    position: fixed;
+    z-index: 101;
+    background-color: transparent;
+    border-radius: 48%;
+    border: 1px solid rgba(245, 245, 245, 0.393);
+}
 
 #loader{
     height: 100%;
@@ -106,4 +115,36 @@ html,body{
     background: #141414;
     height: 100vh;
     width: 100%;
+}
+#page1 nav{
+    display: flex;
+    align-items: center;
+    padding: 3vw 6vw;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+#page1 #nav-part2{
+    display: flex;
+    list-style: none;
+    gap: 2vw;
+    margin-top: 3px;
+    align-items: baseline;
+    justify-content: space-between;
+    /* background-color: rgb(226, 22, 22); */
+}
+#nav-part2 ul{
+    font-size: 0.8vw;
+}
+header .hero{
+    background-color: crimson;
+    width: 72%;
+    margin-left: 28%;
+}
+.hero:nth-child(1){
+    margin-top: 17vh;
+}
+.hero h1{
+    text-transform: uppercase;
+    font-size: 6vw;
+    display: flex;   
 }

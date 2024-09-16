@@ -1,5 +1,4 @@
-
-
+function loadingPageAnimation(){
 const loaderTimer= document.querySelector('#counting h4');
 
 let TL = gsap.timeline();
@@ -46,3 +45,10 @@ TL.from('#page1',{
 TL.to('#loader',{
     display: none,
 })
+}
+
+loadingPageAnimation();
+
+document.addEventListener("mousemove", function(){
+    console.log("helllo");
+});
