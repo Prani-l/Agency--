@@ -23,10 +23,10 @@ html,body{
     height: 2.25vw;
     width: 2.25vw;
     position: fixed;
-     z-index: 101;
+     z-index: 10;
     /* background-color: white; */ 
     border-radius: 48%;
-    border: 1.5px solid rgba(245, 245, 245, 0.723);
+    border: 2px solid rgba(245, 245, 245, 0.723);
     mix-blend-mode: difference;
 }
 
@@ -34,7 +34,7 @@ html,body{
     height: 100%;
     width: 100%;
     position: fixed;
-    z-index: 99;
+    z-index: 999;
     background-color: #030303;
     padding: 26vh 12vw;
 }
@@ -110,6 +110,7 @@ html,body{
     position: relative;
     padding: 0.001px;
     background-color: #030303;
+
 }
 
 #page1{
@@ -140,6 +141,12 @@ header .hero{
     /* background-color: crimson; */
     width: 72%;
     margin-left: 28%;
+    height: fit-content;
+    overflow: hidden;
+}
+header #hero3{
+    text-transform: uppercase;
+    display: flex;
 }
 .hero:nth-child(1){
     margin-top: 17vh;
@@ -147,5 +154,28 @@ header .hero{
 .hero h1{
     text-transform: uppercase;
     font-size: 6vw;
-    display: flex;   
+    display: flex;  
+    /* line-height: 7.2vw;   */
 }
+.hero h2{
+    font-size: 3vw;
+    font-weight: 900;
+    font-size: 6vw;
+    border-bottom: 0.4vw solid #fff;
+    /* margin-right: 20px; */
+    transition: all ease-in 0.3;
+    /* padding-bottom: 1vw; */
+    /* line-height: 7.2vw;  */
+}
+.hero h2:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+    border-bottom: 0.4vw solid #ffffff1e;
+    font-weight: 700;
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: aquamarine;
+}
+

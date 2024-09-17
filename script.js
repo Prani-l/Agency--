@@ -45,6 +45,13 @@ TL.from('#page1',{
 TL.to('#loader',{
     display: 'none',
 })
+TL.from('nav',{
+    opacity:0,
+});
+TL.from('.hero h1,.hero h2',{
+    y:120,
+    stagger:0.2,
+});
 }
 
 function cursorAnimation(){
