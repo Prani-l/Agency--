@@ -177,5 +177,62 @@ header #hero3{
     height: 100vh;
     width: 100%;
     background-color: aquamarine;
+    position: relative;
+    padding-top: 20vh;
+}
+#videoContainer #videoCursor{
+    height: 6vw;
+    width: 6vw;
+    background-color: #FFA63D;
+    border-radius: 49%;
+    position: absolute;
+    top:-12%;
+    right: 20%;
+    z-index: 200;
+
+}
+#videoCursor svg{
+    text-align: center;
+    /* background-color: #ff3db8; */
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}
+#videoContainer img{
+    position: absolute;
+    top:0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
+}
+#videoContainer{
+    height: 60vh;
+    width: 70vw;
+    position: relative;
+    left: 25%;
+    /* top:20% */
+}
+#videoContainer video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: cadetblue;
+}
+#page4{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(19, 21, 110);
+}
+#page4 #page4Content{
+    width: 72vw;
+    position: relative;
+    margin-left: 20%;
 }
 

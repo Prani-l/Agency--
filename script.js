@@ -57,7 +57,7 @@ TL.from('.hero h1,.hero h2',{
 function cursorAnimation(){
 
     document.addEventListener("mousemove", function(dets){
-        console.log(dets.x,dets.y);
+        // console.log(dets.x,dets.y);
         gsap.to("#crsr",{
             top: dets.y-10,
             left: dets.x-15,
