@@ -212,7 +212,7 @@ header #hero3{
     height: 60vh;
     width: 70vw;
     position: relative;
-    left: 25%;
+    left: 28%;
     /* top:20% */
 }
 #videoContainer video{
@@ -229,10 +229,82 @@ header #hero3{
     min-height: 100vh;
     width: 100%;
     background-color: rgb(19, 21, 110);
+    overflow-x: hidden;
+    position: relative;
 }
 #page4 #page4Content{
     width: 72vw;
+    /* overflow-x: hidden; */
     position: relative;
-    margin-left: 20%;
+    /* background-color: #FFA63D; */
+    margin-left: 28%;
 }
+#page4Content h2{
+    font-size: 6vw;
+    text-transform: uppercase;
+}
+#page4Content .underline{
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+    margin: 1vw 0vw;
+    border-radius: 30%;
+}
+#page4Content>p{
+    font-size: 2vw;
+    width: 50%;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+#page4Content section{
+    display: flex;
+    width: 100%;
+    /* background-color: #FFA63D; */
+    /* /* justify-content: center; */
+    /* align-items: center;  */
+}
+#page4Content section img{
+    height:80vh;
+    width: 50%;
+    object-fit: cover;
+}
+#page4Content article{
+    width: 30%;
+    font-size: 1vw;
+    margin-left: 2vw;
+}
+#page4Content #page4-Blue-Featured{
+    position: relative;
+    margin-top: -33vh;
+    margin-left: 26vw;
+    width: 30vw;
+    background-color: #3f7df4;
+    padding: 4vw 2.5vw;
+}
+#page4-Blue-Featured #blueBoxElement{
+    border-bottom: 1px solid #ffffff8f;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    padding: 3vw 0vw;
+    
 
+}
+#blueBoxElement h3{
+    font-size: 1.6vw;
+    text-align: center;
+    font-weight: 500;
+}
+#blueBoxElement p{
+    width: 40%;
+    font-size: 0.8vw;
+    text-align: justify;
+}
+#page5{
+    min-height: 100vh;
+    width: 100%;
+    padding: 5vw 0;
+    background-color: chocolate;
+}
