@@ -5,12 +5,16 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Gilroy";
+  font-family: "Plain light";
   /* background-color: rgba(207, 106, 106, 0.727); */
 }
 @font-face {
-    font-family: "Fira Sans";
+    font-family: "Silk serif";
     src: url('./assets/Fonts/silkserif-regularitalic-webfont.woff') format('woff');
+  }
+  @font-face {
+    font-family: "Plain light";
+    src: url('./assets/Fonts/plain-light-webfont.woff') format('woff');
   }
   
 
@@ -110,7 +114,7 @@ html,body{
     position: relative;
     padding: 0.001px;
     background-color: #030303;
-
+    /* overflow-x: hidden; */
 }
 
 #page1{
@@ -137,6 +141,9 @@ html,body{
 #nav-part2 ul{
     font-size: 0.8vw;
 }
+header{
+    position: relative;
+}
 header .hero{
     /* background-color: crimson; */
     width: 72%;
@@ -155,7 +162,17 @@ header #hero3{
     text-transform: uppercase;
     font-size: 6vw;
     display: flex;  
+    position: relative;
     /* line-height: 7.2vw;   */
+}
+header::before{
+    content: "01";
+    font-size: 3vw;
+    font-family: "Silk serif";
+    position: absolute;
+    left: 21%;
+    top:2%;
+    font-weight: 100;
 }
 .hero h2{
     font-size: 3vw;
@@ -176,7 +193,8 @@ header #hero3{
 #page2{
     height: 100vh;
     width: 100%;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
+    background-color: #141414;
     position: relative;
     padding-top: 20vh;
 }
@@ -223,12 +241,14 @@ header #hero3{
 #page3{
     min-height: 100vh;
     width: 100%;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
+    background-color: #141414;
 }
 #page4{
     min-height: 100vh;
     width: 100%;
-    background-color: rgb(19, 21, 110);
+    /* background-color: rgb(19, 21, 110); */
+    background-color: #141414;
     overflow-x: hidden;
     position: relative;
 }
@@ -242,6 +262,16 @@ header #hero3{
 #page4Content h2{
     font-size: 6vw;
     text-transform: uppercase;
+    position: relative;
+}
+#page4Content h2::before{
+    content: "03";
+    font-size: 3vw;
+    font-family: "Silk serif";
+    position: absolute;
+    left: -10%;
+    top: 8%;
+    font-weight: 100;
 }
 #page4Content .underline{
     height: 4px;
@@ -289,8 +319,6 @@ header #hero3{
     justify-content: space-between;
     /* background-color: aqua; */
     padding: 3vw 0vw;
-    
-
 }
 #blueBoxElement h3{
     font-size: 1.6vw;
@@ -306,5 +334,85 @@ header #hero3{
     min-height: 100vh;
     width: 100%;
     padding: 5vw 0;
-    background-color: chocolate;
+    overflow: hidden;
+    background-color: #141414;
+    /* background-color: chocolate; */
+}
+
+#page5 .elementsOf1{
+    width: 100%;
+    height: 8vw;
+    white-space: nowrap;
+    /* overflow-x: auto; */
+}
+.elementsOf1 h2{
+    font-size: 7vw;
+    text-transform: uppercase;
+    display: inline-block;
+    -webkit-text-stroke:2px #ffffff82;
+    color: transparent;
+    /* font-family: 'Silk serif'; */
+    overflow-x: auto;
+    /* background-color: #3f7df4; */
+    animation-name: marquie;
+    transition: all;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-left: 15px;
+}
+.elementsOf1 span{
+    font-size: 7vw;
+    text-transform: uppercase;
+    display: inline-block;
+    -webkit-text-stroke:1px #ffffff82;
+    color: transparent;
+    font-family: 'Silk serif';
+    transition: all;
+    animation-name: marquie;
+    animation-timing-function: linear;
+    margin-left: 15px;
+}
+#page5 .elementsOf2{
+    width: 100%;
+    height: 8vw;
+    white-space: nowrap;
+    /* height: 50vw; */
+    /* overflow-x: auto; */
+    /* padding: 1vw 2vw; */
+}
+.elementsOf2 h2{
+    font-size: 7vw;
+    text-transform: uppercase;
+    display: inline-block;
+    -webkit-text-stroke:2px #ffffff82;
+    color: transparent;
+    /* font-family: 'Silk serif'; */
+    overflow-x: auto;
+    /* background-color: #3f7df4; */
+    animation-name: marquie;
+    transition: all;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-left: 15px;
+    animation-direction: reverse;
+}
+.elementsOf2 span{
+    font-size: 7vw;
+    text-transform: uppercase;
+    display: inline-block;
+    -webkit-text-stroke:1px #ffffff82;
+    color: transparent;
+    font-family: 'Silk serif';
+}
+
+
+@keyframes marquie {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-100% - 20px));
+    }
 }
