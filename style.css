@@ -62,11 +62,13 @@ html,body{
 #counting h4, #counting h5{
     font-size: 3vw;
     font-weight: 100;
+    font-family: "Silk serif";
 }
 #counting h4{
     /* background: #d14040; */
     text-align: right;
     width: 4vw;
+    font-family: "Silk serif";
 }
 .statement h2 {
     font-size: 6vw;
@@ -242,20 +244,20 @@ header::before{
 #page3{
     min-height: 100vh;
     width: 100%;
-    /* background-color: cadetblue; */
-    background-color: #141414;
+    background-color: cadetblue;
+    /* background-color: #141414; */
 }
 #page3 #page3Content{
-    width: 72vw;
+    width: 100%;
     position: relative;
-    /* background-color: #FFA63D; */
-    margin-left: 28%;
-    padding: 5vh 0;
+    background-color: #FFA63D;
+    padding: 5vh 2vw;
 }
 #page3Content h2{
     font-size: 6vw;
     text-transform: uppercase;
     position: relative;
+    margin-left: 28%;
 }
 #page3Content h2::before{
     content: "02";
@@ -272,6 +274,66 @@ header::before{
     background-color: #fff;
     margin: 1vw 0vw;
     border-radius: 30%;
+    margin-left: 28%;
+}
+#page3Content #img-div-container{
+    background-color: red;
+    padding: 1vw;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap:2vw;
+}
+#img-div-container .imgdiv{
+    width:27vw;
+    height: 38vw;
+    /* background-color: #FFA63D; */
+    overflow: hidden;
+    position: relative;
+    gap: 3vw;
+    flex-shrink: 0;
+}
+#img-div-container .imgdiv:nth-child(1){
+
+    width:22vw;
+    height:30vw;
+}
+
+#img-div-container #circleDiv1{
+    border-radius: 50%;
+    border: 2px solid #fff;
+    height: 20vw;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 7vw;
+    margin-top: 9vw;
+}
+#circleDiv1 svg{
+    height: 25%;
+}
+#img-div-container #circleDiv2{
+    border-radius: 50%;
+    border: 2px solid #fff;
+    height: 20vw;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 9vw;
+}
+#circleDiv2 svg{
+    height: 25%;
+    rotate: -45deg;
+}
+.imgdiv img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 #page4{
     min-height: 100vh;
