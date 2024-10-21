@@ -104,7 +104,55 @@ function cursorAnimation(){
         ease: "cubic-bezier(0.23, 1, 0.320, 1)",
         // duration: 1,
       });
-    }
+    const videoContainer = document.querySelector("#videoContainer");
+    const video = document.querySelector("#videoContainer video");
+    const videoCursor = document.querySelector("#videoCursor");
+    videoContainer.addEventListener("mouseenter", function(){
+        videoContainer.addEventListener("mousemove",function(dets){
+            gsap.to("#crsr",{
+                opacity:0,
+            });
+            gsap.to("#videoCursor",{
+                top: dets.y-210,
+                left: dets.x-480,
+            });
+        });
+        })  
+    videoContainer.addEventListener("mouseleave", function(){
+        gsap.to("#crsr",{
+            opacity:1,
+        });
+        gsap.to("#videoCursor",{ 
+        top:"-12%",
+        right: "20%",
+        });
+    });       
+    let flag=0
+    videoContainer.addEventListener("click",function (){
+        if(flag==0){
+            video.play()
+            video.style.opacity = 1
+            videoCursor.innerHTML = `<svg class="button__pause-icon" width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 24V0H7.36842V24H0Z" fill="#FFFFFF"></path>
+                            <path d="M12.6316 24V0H20V24H12.6316Z" fill="#FFFFFF"></path>
+                        </svg>`
+            gsap.to("#videoCursor",{
+                scale:0.5,
+            })
+            flag=1
+        }else{
+            video.pause()
+            video.style.opacity = 0
+            videoCursor.innerHTML = `<svg class="button__play-icon" width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 12L2.43406e-07 24L-7.15256e-07 -8.74228e-07L20 12Z" fill="#FFFFFF"></path>
+                      </svg>`
+            gsap.to("#videoCursor",{
+                scale:1,
+            })
+            flag=0
+        }
+    });
+}
 
 
     function imgAnimation(){
@@ -117,7 +165,6 @@ function cursorAnimation(){
     }
 imgAnimation();
 
-//function executions 
 loadingPageAnimation();
 
 cursorAnimation();

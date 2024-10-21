@@ -202,55 +202,50 @@ header::before{
     padding: 5vh 0;
 }
 #videoContainer #videoCursor{
-    height: 6vw;
-    width: 6vw;
+    height: 9vw;
+    width: 9vw;
     background-color: #FFA63D;
     border-radius: 49%;
     position: absolute;
     top:-12%;
     right: 20%;
     z-index: 200;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #videoCursor svg{
     text-align: center;
     /* background-color: #ff3db8; */
     position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-
-}
-#videoContainer img{
-    position: absolute;
-    top:0;
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-
 }
 #videoContainer{
     height: 60vh;
     width: 70vw;
     position: relative;
     left: 28%;
+    background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
+    background-size: cover;
+    background-position: center;
     /* top:20% */
 }
 #videoContainer video{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    opacity: 0;
 }
 #page3{
     min-height: 100vh;
     width: 100%;
-    background-color: cadetblue;
-    /* background-color: #141414; */
+    /* background-color: cadetblue; */
+    background-color: #141414;
+    margin-bottom: 8vh;
 }
 #page3 #page3Content{
     width: 100%;
     position: relative;
-    background-color: #FFA63D;
+    /* background-color: #FFA63D; */
     padding: 5vh 2vw;
 }
 #page3Content h2{
@@ -277,7 +272,7 @@ header::before{
     margin-left: 28%;
 }
 #page3Content #img-div-container{
-    background-color: red;
+    /* background-color: red; */
     padding: 1vw;
     position: relative;
     display: flex;
@@ -296,7 +291,6 @@ header::before{
     flex-shrink: 0;
 }
 #img-div-container .imgdiv:nth-child(1){
-
     width:22vw;
     height:30vw;
 }
@@ -304,6 +298,7 @@ header::before{
 #img-div-container #circleDiv1{
     border-radius: 50%;
     border: 2px solid #fff;
+    position: relative;
     height: 20vw;
     width: 20vw;
     display: flex;
@@ -315,6 +310,38 @@ header::before{
 #circleDiv1 svg{
     height: 25%;
 }
+#circle-in{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    top: 0;
+    left:0;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    scale:0;
+    transition: all ease 0.3s;
+    opacity: 0;
+}
+#circle-in p{
+    font-size: 0.9vw;
+    width: 65%;
+    scale:0;
+    color: black;
+    transition: all ease 0.3s;
+    transition-delay: 0.2s;
+    opacity: 0;
+}
+#circleDiv1:hover #circle-in{
+    scale: 1;
+    opacity: 1;
+}
+#circleDiv1:hover #circle-in p{
+    scale: 1;
+    opacity: 1;
+}
 #img-div-container #circleDiv2{
     border-radius: 50%;
     border: 2px solid #fff;
@@ -324,6 +351,15 @@ header::before{
     align-items: center;
     justify-content: center;
     margin-top: 9vw;
+    position: relative;
+}
+#circleDiv2:hover #circle-in{
+    scale: 1;
+    opacity: 1;
+}
+#circleDiv2:hover #circle-in p{
+    scale: 1;
+    opacity: 1;
 }
 #circleDiv2 svg{
     height: 25%;
